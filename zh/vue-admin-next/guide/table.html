@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>列表示例 | FEXT Docs</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/docs/images/logo.png">
+    <meta name="description" content="下一代前端开发技术实战">
+    <link rel="preload" href="/docs/assets/css/0.styles.fbfbd468.css" as="style"><link rel="preload" href="/docs/assets/js/app.3584fcd3.js" as="script"><link rel="preload" href="/docs/assets/js/2.f8028efd.js" as="script"><link rel="preload" href="/docs/assets/js/22.0854ef89.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.5c447fe1.js"><link rel="prefetch" href="/docs/assets/js/11.c64625da.js"><link rel="prefetch" href="/docs/assets/js/12.559378bf.js"><link rel="prefetch" href="/docs/assets/js/13.1b9e58b9.js"><link rel="prefetch" href="/docs/assets/js/14.e8dfbcf7.js"><link rel="prefetch" href="/docs/assets/js/15.43732da2.js"><link rel="prefetch" href="/docs/assets/js/16.73f08709.js"><link rel="prefetch" href="/docs/assets/js/17.6d3f5dbc.js"><link rel="prefetch" href="/docs/assets/js/18.79660890.js"><link rel="prefetch" href="/docs/assets/js/19.68ac2f19.js"><link rel="prefetch" href="/docs/assets/js/20.3561653b.js"><link rel="prefetch" href="/docs/assets/js/21.f1d4bacf.js"><link rel="prefetch" href="/docs/assets/js/23.abeecbeb.js"><link rel="prefetch" href="/docs/assets/js/24.79d1f1ac.js"><link rel="prefetch" href="/docs/assets/js/25.bb4db04e.js"><link rel="prefetch" href="/docs/assets/js/26.241a8d23.js"><link rel="prefetch" href="/docs/assets/js/27.5613bdd0.js"><link rel="prefetch" href="/docs/assets/js/3.040a1d7a.js"><link rel="prefetch" href="/docs/assets/js/4.368d2bbc.js"><link rel="prefetch" href="/docs/assets/js/5.440d618c.js"><link rel="prefetch" href="/docs/assets/js/6.7fdbb72c.js"><link rel="prefetch" href="/docs/assets/js/7.f22024d6.js"><link rel="prefetch" href="/docs/assets/js/8.608dbc91.js"><link rel="prefetch" href="/docs/assets/js/9.3b6ddfc6.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.fbfbd468.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/zh/" class="home-link router-link-active"><img src="/docs/images/logo.png" alt="FEXT Docs" class="logo"> <span class="site-name can-hide">FEXT Docs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/zh/vue-admin-next/intro.html" class="nav-link">
+  Vue Admin Next
+</a></div><div class="nav-item"><a href="https://github.com/openfext" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  FEXT
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/docs/zh/vue-admin-next/guide/table.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/openfext/docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/zh/vue-admin-next/intro.html" class="nav-link">
+  Vue Admin Next
+</a></div><div class="nav-item"><a href="https://github.com/openfext" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  FEXT
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/docs/zh/vue-admin-next/guide/table.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/openfext/docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>介绍</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/zh/vue-admin-next/intro.html" class="sidebar-link">基础概念</a></li><li><a href="/docs/zh/vue-admin-next/faq.html" class="sidebar-link">常见问题</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>指南</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/zh/vue-admin-next/guide/start.html" class="sidebar-link">快速开始</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/start.html#前置依赖" class="sidebar-link">前置依赖</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/start.html#下载项目" class="sidebar-link">下载项目</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/start.html#目录结构" class="sidebar-link">目录结构</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/start.html#源码划分" class="sidebar-link">源码划分</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/start.html#启动项目" class="sidebar-link">启动项目</a></li></ul></li><li><a href="/docs/zh/vue-admin-next/guide/dataflow.html" class="sidebar-link">数据处理流程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/dataflow.html#dataflow" class="sidebar-link">Dataflow</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/dataflow.html#log" class="sidebar-link">Log</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/dataflow.html#dao" class="sidebar-link">DAO</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/dataflow.html#model" class="sidebar-link">Model</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/dataflow.html#service" class="sidebar-link">Service</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/dataflow.html#使用方式" class="sidebar-link">使用方式</a></li></ul></li><li><a href="/docs/zh/vue-admin-next/guide/user.html" class="sidebar-link">用户权限</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/user.html#userservice" class="sidebar-link">UserService</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/user.html#authservice" class="sidebar-link">AuthService</a></li></ul></li><li><a href="/docs/zh/vue-admin-next/guide/plugin.html" class="sidebar-link">插件注册</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/plugin.html#基础插件示例" class="sidebar-link">基础插件示例</a></li></ul></li><li><a href="/docs/zh/vue-admin-next/guide/layout.html" class="sidebar-link">布局</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/layout.html#初始状态及个性化配置" class="sidebar-link">初始状态及个性化配置</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/layout.html#使用自定义布局" class="sidebar-link">使用自定义布局</a></li></ul></li><li><a href="/docs/zh/vue-admin-next/guide/navigation.html" class="sidebar-link">导航配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/navigation.html#基础格式" class="sidebar-link">基础格式</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/navigation.html#导航权限判断" class="sidebar-link">导航权限判断</a></li></ul></li><li><a href="/docs/zh/vue-admin-next/guide/router.html" class="sidebar-link">路由配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/router.html#面包屑" class="sidebar-link">面包屑</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/router.html#路由组件缓存" class="sidebar-link">路由组件缓存</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/router.html#懒加载" class="sidebar-link">懒加载</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/router.html#内置拦截器" class="sidebar-link">内置拦截器</a></li></ul></li><li><a href="/docs/zh/vue-admin-next/guide/module-files.html" class="sidebar-link">模块文件组织</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/module-files.html#模块索引文件" class="sidebar-link">模块索引文件</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/module-files.html#页面及组件目录" class="sidebar-link">页面及组件目录</a></li></ul></li><li><a href="/docs/zh/vue-admin-next/guide/form.html" class="sidebar-link">表单示例</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/form.html#composition-api" class="sidebar-link">Composition API</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/form.html#表单校验" class="sidebar-link">表单校验</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/form.html#表单联动" class="sidebar-link">表单联动</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/form.html#表单数据处理" class="sidebar-link">表单数据处理</a></li></ul></li><li><a href="/docs/zh/vue-admin-next/guide/table.html" aria-current="page" class="active sidebar-link">列表示例</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/table.html#composition-api" class="sidebar-link">Composition API</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/table.html#快捷查询" class="sidebar-link">快捷查询</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/table.html#数据选择和批量操作" class="sidebar-link">数据选择和批量操作</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/table.html#导出表格数据" class="sidebar-link">导出表格数据</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/table.html#显示更多查询项" class="sidebar-link">显示更多查询项</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/table.html#显示更多数据详情" class="sidebar-link">显示更多数据详情</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/table.html#显示更多操作项" class="sidebar-link">显示更多操作项</a></li></ul></li><li><a href="/docs/zh/vue-admin-next/guide/practice.html" class="sidebar-link">通用开发模式</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/practice.html#状态管理" class="sidebar-link">状态管理</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/practice.html#操作权限判断" class="sidebar-link">操作权限判断</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/practice.html#loading" class="sidebar-link">Loading</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/practice.html#一键复制文本" class="sidebar-link">一键复制文本</a></li></ul></li><li><a href="/docs/zh/vue-admin-next/guide/theme.html" class="sidebar-link">主题样式</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/theme.html#定制主题" class="sidebar-link">定制主题</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/theme.html#辅助样式类" class="sidebar-link">辅助样式类</a></li></ul></li><li><a href="/docs/zh/vue-admin-next/guide/deploy.html" class="sidebar-link">构建发布</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/deploy.html#构建" class="sidebar-link">构建</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/guide/deploy.html#部署" class="sidebar-link">部署</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>API Reference</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/zh/vue-admin-next/api/component.html" class="sidebar-link">Component Usage</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/api/component.html#table-selection-ultimate" class="sidebar-link">table-selection-ultimate</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/api/component.html#table-with-pager" class="sidebar-link">table-with-pager</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/api/component.html#clipboard-text" class="sidebar-link">clipboard-text</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/api/component.html#form-action" class="sidebar-link">form-action</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/api/component.html#form-error" class="sidebar-link">form-error</a></li><li class="sidebar-sub-header"><a href="/docs/zh/vue-admin-next/api/component.html#form-tip" class="sidebar-link">form-tip</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="列表示例"><a href="#列表示例" class="header-anchor">#</a> 列表示例</h1> <p>列表查询和基于列表数据的操作也是中后台系统的基本功能。Vue Admin Next 的示例模块中，实现了部分列表页通用的开发模式。</p> <p>完整的源码可参考 <code>src/modules/table</code>，以下是功能简介。</p> <h2 id="composition-api"><a href="#composition-api" class="header-anchor">#</a> Composition API</h2> <p>这里使用了 <a href="https://github.com/openfext/vue-use" target="_blank" rel="noopener noreferrer">Vue Use<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 项目的 <code>useTable</code> API。</p> <h3 id="usetable"><a href="#usetable" class="header-anchor">#</a> useTable</h3> <p>一般列表页中，都会包含表格、翻页、查询表单、快捷查询等组件，这些操作都会触发表格数据的更新。为了简化互相之间的交互，把通用的逻辑都封装在了 <code>useTable</code> 组合中，大致实现如下。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> ref<span class="token punctuation">,</span> reactive<span class="token punctuation">,</span> computed<span class="token punctuation">,</span> watch <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@vue/composition-api'</span>
+
+<span class="token keyword">function</span> <span class="token function">useTable</span><span class="token punctuation">(</span><span class="token parameter">options <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> state <span class="token operator">=</span> <span class="token function">reactive</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token comment">// 初始翻页参数 pageNo pageSize orderBy order(asc|desc)</span>
+    initialPage<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 初始过滤条件</span>
+    initialFilter<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 当前翻页参数</span>
+    page<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 当前过滤条件</span>
+    filter<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 当前表格的数据</span>
+    list<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 当前表格选中的数据</span>
+    selection<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 当前表格跨页选择的数据</span>
+    crossPageSelection<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+  <span class="token comment">// 此处省略实现逻辑</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 响应式数据</span>
+    state<span class="token punctuation">,</span>
+    <span class="token comment">// 转化为自定义格式的初始排序方式</span>
+    customPageSorter<span class="token punctuation">,</span>
+
+    <span class="token comment">// 更新表格的数据</span>
+    setList<span class="token punctuation">,</span>
+
+    <span class="token comment">// 更新翻页参数</span>
+    setPage<span class="token punctuation">,</span>
+    <span class="token comment">// 重置翻页参数</span>
+    resetPage<span class="token punctuation">,</span>
+    <span class="token comment">// 设置初始翻页参数</span>
+    setInitialPage<span class="token punctuation">,</span>
+
+    <span class="token comment">// 更新过滤条件</span>
+    setFilter<span class="token punctuation">,</span>
+    <span class="token comment">// 重置过滤条件</span>
+    resetFilter<span class="token punctuation">,</span>
+    <span class="token comment">// 设置初始过滤条件</span>
+    setInitialFilter<span class="token punctuation">,</span>
+
+    <span class="token comment">// 设置排序方式</span>
+    setPageSort<span class="token punctuation">,</span>
+    <span class="token comment">// 设置每页数据条数</span>
+    setPageSize<span class="token punctuation">,</span>
+    <span class="token comment">// 设置当前页数</span>
+    setPageNo<span class="token punctuation">,</span>
+
+    <span class="token comment">// 设置当前选择项</span>
+    setSelection<span class="token punctuation">,</span>
+    <span class="token comment">// 添加跨页选择项</span>
+    addCrossPageSelection<span class="token punctuation">,</span>
+    <span class="token comment">// 移除跨页选择项</span>
+    removeCrossPageSelection<span class="token punctuation">,</span>
+    <span class="token comment">// 清空跨页选择项</span>
+    clearCrossPageSelection<span class="token punctuation">,</span>
+
+    <span class="token comment">// 发送更新消息</span>
+    triggerUpdate<span class="token punctuation">,</span>
+    <span class="token comment">// 监听更新消息，接收回调函数（发起请求等）</span>
+    watchUpdate<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token punctuation">{</span> useTable <span class="token punctuation">}</span>
+</code></pre></div><h4 id="基本使用方法"><a href="#基本使用方法" class="header-anchor">#</a> 基本使用方法</h4> <p>以下为部分源码展示，详细信息可参考 <code>src/modules/table/pages/basic</code>。</p> <p>外层组件 <code>example-basic-list</code>，用于组合各个子组件，同时调用 <code>useTable</code> 获取状态和方法。</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-card</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>example-query-form</span> <span class="token attr-name">:table</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>table<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>example-query-form</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-card</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-card</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>example-table</span> <span class="token attr-name">:table</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>table<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>example-table</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>example-query-page</span> <span class="token attr-name">:table</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>table<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>example-query-page</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-card</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> <span class="token punctuation">{</span> useTable <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@fext/vue-use'</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> TableComponents <span class="token keyword">from</span> <span class="token string">'./components'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">'example-basic-list'</span><span class="token punctuation">,</span>
+
+  components<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span>TableComponents<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> table <span class="token operator">=</span> <span class="token function">useTable</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      uniqueKey<span class="token operator">:</span> <span class="token string">'id'</span><span class="token punctuation">,</span>
+      sortKeys<span class="token operator">:</span> <span class="token punctuation">{</span>
+        order<span class="token operator">:</span> <span class="token string">'order'</span><span class="token punctuation">,</span>
+        orderBy<span class="token operator">:</span> <span class="token string">'prop'</span><span class="token punctuation">,</span>
+        asc<span class="token operator">:</span> <span class="token string">'ascending'</span><span class="token punctuation">,</span>
+        desc<span class="token operator">:</span> <span class="token string">'descending'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> state<span class="token punctuation">,</span> setInitialPage <span class="token punctuation">}</span> <span class="token operator">=</span> table
+
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      table<span class="token punctuation">,</span>
+
+      state<span class="token punctuation">,</span>
+
+      setInitialPage<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setInitialPage</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      pageNo<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      pageSize<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+      orderBy<span class="token operator">:</span> <span class="token string">'id'</span><span class="token punctuation">,</span>
+      order<span class="token operator">:</span> <span class="token string">'asc'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>查询表单组件 <code>example-query-form</code> 用于输入过滤条件，同时可以手动触发表格数据更新：</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-form</span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>medium<span class="token punctuation">&quot;</span></span> <span class="token attr-name">@keyup.native.enter</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>search<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- 表单元素，直接绑定到 state.filter.id --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>example-query-id</span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>state.filter.id<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>example-query-id</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-button</span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>medium<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>primary<span class="token punctuation">&quot;</span></span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>search<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>搜索<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-button</span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>medium<span class="token punctuation">&quot;</span></span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>reset<span class="token punctuation">&quot;</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>RESET<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>重置<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-form</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">'example-query-form'</span><span class="token punctuation">,</span>
+
+  props<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 外层组件传递的 useTable 生成的状态空间</span>
+    table<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> Object<span class="token punctuation">,</span>
+      required<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">,</span>
+      setPage<span class="token punctuation">,</span>
+      setFilter<span class="token punctuation">,</span>
+      resetFilter<span class="token punctuation">,</span>
+      setInitialFilter<span class="token punctuation">,</span>
+      triggerUpdate<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span> <span class="token operator">=</span> props<span class="token punctuation">.</span>table
+
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">,</span>
+      setPage<span class="token punctuation">,</span>
+      setFilter<span class="token punctuation">,</span>
+      resetFilter<span class="token punctuation">,</span>
+      setInitialFilter<span class="token punctuation">,</span>
+      triggerUpdate<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 设置初始过滤条件</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setInitialFilter</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getInitialValues</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">getInitialValues</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 重置为初始过滤条件，并触发查询</span>
+    <span class="token function">reset</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">resetFilter</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">search</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 查询操作，当前页码设置为 1</span>
+    <span class="token function">search</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setPage</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        pageNo<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token comment">// 触发更新</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">triggerUpdate</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>翻页组件 <code>example-query-page</code> 用于设置当前页码和每页的条数，也会触发表格数据的更新：</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- 将翻页组件的状态和事件处理方法绑定至 useTable 生成的状态空间 --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-pagination</span>
+      <span class="token attr-name">background</span>
+      <span class="token attr-name">:page-sizes</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pageSizes<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">layout</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>total, sizes, prev, pager, next, jumper<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">@size-change</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>setPageSize<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">@current-change</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>setPageNo<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:current-page</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>state.page.pageNo<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:page-size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>state.page.pageSize<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:total</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>state.list.totalCount<span class="token punctuation">&quot;</span></span>
+    <span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-pagination</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">'example-query-page'</span><span class="token punctuation">,</span>
+
+  props<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 外层组件传递的 useTable 生成的状态空间</span>
+    table<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> Object<span class="token punctuation">,</span>
+      required<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> state<span class="token punctuation">,</span> setPageSize<span class="token punctuation">,</span> setPageNo <span class="token punctuation">}</span> <span class="token operator">=</span> props<span class="token punctuation">.</span>table
+
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">,</span>
+      setPageSize<span class="token punctuation">,</span>
+      setPageNo<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      pageSizes<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">,</span> <span class="token number">80</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>最后是主角 <code>example-table</code>，用于展示最终查询得到的表格数据：</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- 将表格数据、排序方式、选择数据等操作绑定至 useTable 生成的状态空间 --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table</span>
+      <span class="token attr-name">:data</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>state.list.result<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:default-sort</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>customPageSorter<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">@sort-change</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>setPageSort<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">@selection-change</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>setSelection<span class="token punctuation">&quot;</span></span>
+    <span class="token punctuation">&gt;</span></span>
+      <span class="token comment">&lt;!-- columns --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">'example-table'</span><span class="token punctuation">,</span>
+
+  props<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 外层组件传递的 useTable 生成的状态空间</span>
+    table<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> Object<span class="token punctuation">,</span>
+      required<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">,</span>
+      customPageSorter<span class="token punctuation">,</span>
+      setPageSort<span class="token punctuation">,</span>
+      setList<span class="token punctuation">,</span>
+      setSelection<span class="token punctuation">,</span>
+      watchUpdate<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span> <span class="token operator">=</span> props<span class="token punctuation">.</span>table
+
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">,</span>
+      customPageSorter<span class="token punctuation">,</span>
+      setPageSort<span class="token punctuation">,</span>
+      setList<span class="token punctuation">,</span>
+      setSelection<span class="token punctuation">,</span>
+      watchUpdate<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 通过计算属性将 page 和 filter 整合为接口所需的查询格式</span>
+  computed<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">query</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> <span class="token punctuation">{</span> page<span class="token punctuation">,</span> filter <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        page<span class="token punctuation">,</span>
+        filter<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 监听其它组件发生的更新信号，执行拉取数据操作</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">watchUpdate</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">fetchList</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token keyword">async</span> <span class="token function">fetchList</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 调用远程服务</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$services<span class="token punctuation">.</span>exampleListService
+        <span class="token punctuation">.</span><span class="token function">getList</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          data<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>query<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">list</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 更新表格数据</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setList</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="快捷查询"><a href="#快捷查询" class="header-anchor">#</a> 快捷查询</h2> <p>用户通常有把几个过滤条件的值组合到一起一键查询的操作。通过 Composition API 提供的方法，可以非常便捷地实现该功能。以下是 <code>example-quick-query</code> 组件部分源码参考：</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-form</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>list-inline vertical-space-10 horizontal-space-10<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span>常用查询：<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+      <span class="token comment">&lt;!-- 展示所有快捷查询条件，点击时触发查询 --&gt;</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>query in queries<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>query.name<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>updateQuery(query)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{ query.name }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-form</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">'example-quick-query'</span><span class="token punctuation">,</span>
+
+  props<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 外层组件传递的 useTable 生成的状态空间</span>
+    table<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> Object<span class="token punctuation">,</span>
+      required<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> state<span class="token punctuation">,</span> setFilter<span class="token punctuation">,</span> triggerUpdate <span class="token punctuation">}</span> <span class="token operator">=</span> props<span class="token punctuation">.</span>table
+
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">,</span>
+
+      setFilter<span class="token punctuation">,</span>
+      triggerUpdate<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 可以保存至数据库、LocalStorage 等</span>
+      queries<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          name<span class="token operator">:</span> <span class="token string">'ID - 1000'</span><span class="token punctuation">,</span>
+          filter<span class="token operator">:</span> <span class="token punctuation">{</span>
+            id<span class="token operator">:</span> <span class="token number">1000</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          name<span class="token operator">:</span> <span class="token string">'标题 - Next'</span><span class="token punctuation">,</span>
+          filter<span class="token operator">:</span> <span class="token punctuation">{</span>
+            q<span class="token operator">:</span> <span class="token string">'Next'</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">updateQuery</span><span class="token punctuation">(</span><span class="token parameter">query</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 更新过滤条件</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setFilter</span><span class="token punctuation">(</span>query<span class="token punctuation">.</span>filter <span class="token operator">||</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        merge<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token comment">// 触发数据更新操作</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">triggerUpdate</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="数据选择和批量操作"><a href="#数据选择和批量操作" class="header-anchor">#</a> 数据选择和批量操作</h2> <p>一般情况下，通过 <code>useTable</code> 的 <code>selection</code> 状态就可以获取到当前页选择的数据。但是某些情况下，可能会存在需要从不同的查询结果中挑选一些数据进行批量操作，因此为了解决跨页选择的问题，<code>useTable</code> 内部维护了一个 <code>crossPageSelection</code> 的状态和对应的更新方法，但是并没有可视化的交互组件。由于这个功能比较通用，Vue Admin Next 将其封装成了一个通用的组件，放在了 <code>src/common/components/extend/table-selection-ultimate</code> 目录。</p> <p>下面演示一下它的基础使用方法：</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-form</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- 需要传递 useTable 生成的状态空间 --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table-selection-ultimate</span>
+      <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>ultimateSelection<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:table</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>table<span class="token punctuation">&quot;</span></span>
+    <span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table-selection-ultimate</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-form</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> <span class="token punctuation">{</span> TableSelectionUltimate <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@/common/components/extend/table-selection-ultimate'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">'example-toolbar'</span><span class="token punctuation">,</span>
+
+  components<span class="token operator">:</span> <span class="token punctuation">{</span>
+    TableSelectionUltimate<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  props<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 外层组件传递的 useTable 生成的状态空间</span>
+    table<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> Object<span class="token punctuation">,</span>
+      required<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> state <span class="token punctuation">}</span> <span class="token operator">=</span> props<span class="token punctuation">.</span>table
+
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token keyword">async</span> <span class="token function">getSelection</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 1. 仅返回当前页选择的数据（不需要 table-selection-ultimate 组件）</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>selection
+
+      <span class="token comment">// 2. 返回跨页选择的数据</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>crossPageSelection
+
+      <span class="token comment">// 3. 都存在的情况下可以由用户进行选择</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>ultimateSelection<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>基于选择的数据，你就可以进行任意的批量操作了。</p> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p><code>table-selection-ultimate</code> 的 <code>use</code> 方法会进行如下判断：1）若仅存在当前页数据则直接使用当前页数据；2）若仅存在跨页数据则直接使用跨页数据；3）<strong>若当前页和跨页数据都存在，则需要用户进行选择。</strong></p></div> <h2 id="导出表格数据"><a href="#导出表格数据" class="header-anchor">#</a> 导出表格数据</h2> <p>Vue Admin Next 中通过 <a href="https://github.com/zemirco/json2csv" target="_blank" rel="noopener noreferrer">json2csv<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 将 JSON 数据转换为 CSV 文件并下载。此功能封装到了工具函数 <code>src/common/utils/export.js</code> 中。</p> <p>使用方法参考示例模块的代码：<code>src/modules/table/pages/basic/components/ExampleToolbar.vue</code>。导出操作同样也使用到了数据选择的功能。</p> <h2 id="显示更多查询项"><a href="#显示更多查询项" class="header-anchor">#</a> 显示更多查询项</h2> <p>在比较复杂的模块中，随着业务的不断迭代，可能会有几十个表单查询项。如果全部都默认展示的话，使用体验较差。因此 Vue Admin Next 示例模块中通过 <code>popover</code> 和 <code>tab</code> 来展示不常有的查询项，节省页面空间。</p> <p>源码参考：</p> <ul><li><code>src/modules/table/pages/basic/components/ExampleQueryForm.vue</code></li> <li><code>src/modules/table/pages/basic/components/form/advanced</code></li></ul> <h2 id="显示更多数据详情"><a href="#显示更多数据详情" class="header-anchor">#</a> 显示更多数据详情</h2> <p>在部分列表页场景下，用户关心的数据维度较多，在屏幕宽度有限的情况下，无法全部展示。虽然 <code>el-table</code> 通过 <code>expand</code> 列提供了展开收起的功能。但是依然不够便捷。Vue Admin Next 采用了 <code>popover</code> 的形式，在鼠标移动到每行 “更多数据” 链接的时候，就可以展示当前行需要的全部数据。</p> <p>源码参考：</p> <ul><li><code>src/modules/table/pages/basic/components/ExampleTable.vue</code></li> <li><code>src/modules/table/pages/basic/components/table/ExampleMoreColumn.vue</code></li></ul> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>为了避免渲染过多 <code>popover</code>，组件 <code>example-table</code> 通过设置 <code>currentRow</code> 并判断是否当前列来优化。</p></div> <h2 id="显示更多操作项"><a href="#显示更多操作项" class="header-anchor">#</a> 显示更多操作项</h2> <p>在部分列表页场景下，用户需要的操作非常多，一列的空间无法摆放。因此 Vue Admin Next 采用了 <code>popover</code> 和 <code>tab</code> 的形式，在鼠标移动到每行 “更多操作” 链接的时候，就可以展示所有操作按钮。</p> <p>源码参考：</p> <ul><li><code>src/modules/table/pages/basic/components/ExampleTable.vue</code></li> <li><code>src/modules/table/pages/basic/components/table/ExampleMoreLink.vue</code></li></ul> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>为了避免渲染过多 <code>popover</code>，组件 <code>example-table</code> 通过设置 <code>currentRow</code> 并判断是否当前列来优化。</p></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/openfext/docs/edit/master/docs/zh/vue-admin-next/guide/table.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">5/31/2020, 2:44:15 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/zh/vue-admin-next/guide/form.html" class="prev">
+        表单示例
+      </a></span> <span class="next"><a href="/docs/zh/vue-admin-next/guide/practice.html">
+        通用开发模式
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/docs/assets/js/app.3584fcd3.js" defer></script><script src="/docs/assets/js/2.f8028efd.js" defer></script><script src="/docs/assets/js/22.0854ef89.js" defer></script>
+  </body>
+</html>
