@@ -2,7 +2,7 @@
 
 FEXT Docs.
 
-[https://github.com/openfext](https://github.com/openfext)
+[https://openfext.github.io/docs/](https://openfext.github.io/docs/)
 
 ## Projects
 
