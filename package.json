@@ -1,0 +1,26 @@
+{
+  "name": "@fext/docs",
+  "version": "1.0.0",
+  "description": "FEXT Docs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "test": "jest"
+  },
+  "keywords": [
+    "openfext",
+    "fext",
+    "docs"
+  ],
+  "author": "felixpy.1993@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.5.0",
+    "@vuepress/plugin-back-to-top": "^1.5.0",
+    "@vuepress/plugin-medium-zoom": "^1.5.0",
+    "@vuepress/plugin-nprogress": "^1.5.0",
+    "@vuepress/plugin-register-components": "^1.5.0",
+    "vuepress": "^1.5.0"
+  }
+}
