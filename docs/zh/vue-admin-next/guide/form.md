@@ -243,7 +243,7 @@ Vue Admin Next 中通过 [VeeValidate](https://github.com/logaretm/vee-validate)
 
 <script>
 import { useForm } from '@fext/vue-use'
-import * as ExampleFormComponents from './components'
+import ExampleFormComponents from './components'
 
 export default {
   name: 'example-form',

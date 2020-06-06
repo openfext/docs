@@ -106,7 +106,7 @@ export { useTable }
 
 <script>
 import { useTable } from '@fext/vue-use'
-import * as TableComponents from './components'
+import TableComponents from './components'
 
 export default {
   name: 'example-basic-list',

@@ -9,19 +9,19 @@
 代码示例：
 
 ```js
-import * as dao from './dao'
-import * as services from './services'
-import * as models from './models'
-import * as stores from './store'
-import routes from './router'
+import dao from './dao';
+import services from './services';
+import models from './models';
+import stores from './store';
+import routes from './router';
 
 const dataflow = {
   models,
   dao,
-  services,
-}
+  services
+};
 
-export default { routes, stores, dataflow }
+export default { routes, stores, dataflow };
 ```
 
 ## 页面及组件目录
