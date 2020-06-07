@@ -107,7 +107,7 @@ module.exports = {
   themeConfig: {
     logo: '/images/logo.png',
 
-    repo: 'https://github.com/openfext/docs',
+    repo: 'https://github.com/openfext',
     repoLabel: 'Github',
     docsDir: 'docs',
     lastUpdated: true,
