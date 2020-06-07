@@ -201,6 +201,12 @@ module.exports = {
     ['@vuepress/nprogress', true],
     ['@vuepress/register-components', true],
     [
+      '@vuepress/google-analytics',
+      {
+        ga: 'UA-131733254-3',
+      },
+    ],
+    [
       '@vuepress/search',
       {
         searchMaxSuggestions: 10,
