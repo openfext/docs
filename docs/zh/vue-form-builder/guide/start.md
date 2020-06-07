@@ -2,7 +2,7 @@
 
 ## 安装
 
-由于 FormBuilder 通过 Vue Use 提供的 `useForm` Composition API 来管理表单状态，安装时，需要同时进行安装：
+由于 FormBuilder 通过 Vue Use 提供的 [useForm](../../vue-use/api/form.md) Composition API 来管理表单状态，安装时，需要同时进行安装：
 
 ```bash
 npm i @fext/vue-form-builder @fext/vue-use
@@ -46,9 +46,16 @@ export default {
   setup() {
     // Form Composition API
     const form = useForm();
+    const { formValues, updateFormValues } = form;
 
     return {
       form
+
+      /* 表单数据模型 */
+      formValues,
+
+      /* 手动更新表单数据模型 */
+      updateFormValues
     };
   },
 
@@ -172,9 +179,16 @@ export default {
 
   setup() {
     const form = useForm();
+    const { formValues, updateFormValues } = form;
 
     return {
-      form
+      form,
+
+      /* 表单数据模型 */
+      formValues,
+
+      /* 手动更新表单数据模型 */
+      updateFormValues
     };
   },
 
