@@ -2,10 +2,10 @@
 
 ## 安装
 
-由于 FormBuilder 通过 Vue Use 提供的 [useForm](../../vue-use/api/form.md) Composition API 来管理表单状态，安装时，需要同时进行安装：
+由于 FormBuilder 通过 Vue Use 提供的 [useForm](../../vue-use/api/form.md) Composition API 来管理表单状态，同时依赖 [vee-validate](https://github.com/logaretm/vee-validate) 来进行表单校验，因此需要一起进行安装：
 
 ```bash
-npm i @fext/vue-form-builder @fext/vue-use
+npm i @fext/vue-form-builder @fext/vue-use vee-validate
 ```
 
 ## 默认组件
