@@ -6,6 +6,8 @@ Vue Admin Next 是一套针对中后台应用场景的企业级 Web 应用脚手
 
 [源码仓库 - openfext/vue-admin-next](https://github.com/openfext/vue-admin-next)
 
+![Screen Capture](https://github.com/openfext/vue-admin-next/raw/develop/.github/preview.png)
+
 ## 主要特性
 
 - **开箱即用**

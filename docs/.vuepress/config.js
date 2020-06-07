@@ -2,12 +2,13 @@ function getVueAdminNextSidebar(groups = []) {
   return [
     {
       title: groups[0],
-      collapsable: false,
       sidebarDepth: 0,
+      collapsable: false,
       children: ['intro', 'faq'],
     },
     {
       title: groups[1],
+      sidebarDepth: 1,
       collapsable: false,
       children: [
         'guide/start',
@@ -27,8 +28,44 @@ function getVueAdminNextSidebar(groups = []) {
     },
     {
       title: groups[2],
+      sidebarDepth: 1,
       collapsable: false,
       children: ['api/component'],
+    },
+  ]
+}
+
+function getVueFormBuilderSidebar(groups = []) {
+  return [
+    {
+      title: groups[0],
+      sidebarDepth: 0,
+      collapsable: false,
+      children: ['intro'],
+    },
+    {
+      title: groups[1],
+      sidebarDepth: 2,
+      collapsable: false,
+      children: [
+        'guide/start',
+        'guide/shares',
+        'guide/metadata',
+        'guide/event',
+        'guide/custom',
+      ],
+    },
+    {
+      title: groups[2],
+      sidebarDepth: 2,
+      collapsable: false,
+      children: ['api/component', 'api/factory'],
+    },
+    {
+      title: groups[3],
+      sidebarDepth: 2,
+      collapsable: false,
+      children: ['config/schema'],
     },
   ]
 }
@@ -74,6 +111,14 @@ module.exports = {
         },
         nav: [
           {
+            text: 'Vue Use',
+            link: '/vue-use/intro.html',
+          },
+          {
+            text: 'Vue Form Builder',
+            link: '/vue-form-builder/intro.html',
+          },
+          {
             text: 'Vue Admin Next',
             link: '/vue-admin-next/intro.html',
           },
@@ -100,17 +145,31 @@ module.exports = {
         },
         nav: [
           {
+            text: 'Vue Use',
+            link: '/zh/vue-use/intro.html',
+          },
+          {
+            text: 'Vue Form Builder',
+            link: '/zh/vue-form-builder/intro.html',
+          },
+          {
             text: 'Vue Admin Next',
             link: '/zh/vue-admin-next/intro.html',
           },
           { text: 'FEXT', link: 'https://github.com/openfext' },
         ],
-        sidebarDepth: 1,
+        sidebarDepth: 2,
         sidebar: {
           '/zh/vue-admin-next/': getVueAdminNextSidebar([
             '介绍',
             '指南',
             'API Reference',
+          ]),
+          '/zh/vue-form-builder/': getVueFormBuilderSidebar([
+            '介绍',
+            '指南',
+            'API Reference',
+            'Config Reference',
           ]),
         },
       },
