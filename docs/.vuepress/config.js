@@ -70,6 +70,23 @@ function getVueFormBuilderSidebar(groups = []) {
   ]
 }
 
+function getVueUseSidebar(groups = []) {
+  return [
+    {
+      title: groups[0],
+      sidebarDepth: 0,
+      collapsable: false,
+      children: ['intro'],
+    },
+    {
+      title: groups[1],
+      sidebarDepth: 0,
+      collapsable: false,
+      children: ['api/form', 'api/table', 'api/loading', 'api/resize'],
+    },
+  ]
+}
+
 module.exports = {
   base: '/docs/',
   head: [['link', { rel: 'icon', href: '/images/logo.png' }]],
@@ -171,6 +188,7 @@ module.exports = {
             'API Reference',
             'Config Reference',
           ]),
+          '/zh/vue-use/': getVueUseSidebar(['介绍', 'API Reference']),
         },
       },
     },
