@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>useTable | FEXT Docs</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/docs/images/logo.png">
+    <meta name="description" content="下一代前端开发技术实战">
+    <link rel="preload" href="/docs/assets/css/0.styles.fbfbd468.css" as="style"><link rel="preload" href="/docs/assets/js/app.04ef65b2.js" as="script"><link rel="preload" href="/docs/assets/js/2.f8028efd.js" as="script"><link rel="preload" href="/docs/assets/js/38.0bc519b8.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.5c447fe1.js"><link rel="prefetch" href="/docs/assets/js/11.c64625da.js"><link rel="prefetch" href="/docs/assets/js/12.559378bf.js"><link rel="prefetch" href="/docs/assets/js/13.1b9e58b9.js"><link rel="prefetch" href="/docs/assets/js/14.4eda266b.js"><link rel="prefetch" href="/docs/assets/js/15.cb042d79.js"><link rel="prefetch" href="/docs/assets/js/16.3dd323af.js"><link rel="prefetch" href="/docs/assets/js/17.11cc5c72.js"><link rel="prefetch" href="/docs/assets/js/18.437c3b08.js"><link rel="prefetch" href="/docs/assets/js/19.6ff31d0b.js"><link rel="prefetch" href="/docs/assets/js/20.3561653b.js"><link rel="prefetch" href="/docs/assets/js/21.f1d4bacf.js"><link rel="prefetch" href="/docs/assets/js/22.25aae389.js"><link rel="prefetch" href="/docs/assets/js/23.abeecbeb.js"><link rel="prefetch" href="/docs/assets/js/24.79d1f1ac.js"><link rel="prefetch" href="/docs/assets/js/25.5ca183cc.js"><link rel="prefetch" href="/docs/assets/js/26.9240f156.js"><link rel="prefetch" href="/docs/assets/js/27.ee38f380.js"><link rel="prefetch" href="/docs/assets/js/28.4e7f47d6.js"><link rel="prefetch" href="/docs/assets/js/29.71f2887f.js"><link rel="prefetch" href="/docs/assets/js/3.14e19c8f.js"><link rel="prefetch" href="/docs/assets/js/30.25305957.js"><link rel="prefetch" href="/docs/assets/js/31.fa4bcc2c.js"><link rel="prefetch" href="/docs/assets/js/32.1d130ab2.js"><link rel="prefetch" href="/docs/assets/js/33.0d0017f4.js"><link rel="prefetch" href="/docs/assets/js/34.14a64812.js"><link rel="prefetch" href="/docs/assets/js/35.a7361dd1.js"><link rel="prefetch" href="/docs/assets/js/36.c6cfab45.js"><link rel="prefetch" href="/docs/assets/js/37.31f0dd88.js"><link rel="prefetch" href="/docs/assets/js/39.fe53dec1.js"><link rel="prefetch" href="/docs/assets/js/4.368d2bbc.js"><link rel="prefetch" href="/docs/assets/js/5.760a9077.js"><link rel="prefetch" href="/docs/assets/js/6.65fae01e.js"><link rel="prefetch" href="/docs/assets/js/7.f22024d6.js"><link rel="prefetch" href="/docs/assets/js/8.608dbc91.js"><link rel="prefetch" href="/docs/assets/js/9.3b6ddfc6.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.fbfbd468.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/zh/" class="home-link router-link-active"><img src="/docs/images/logo.png" alt="FEXT Docs" class="logo"> <span class="site-name can-hide">FEXT Docs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/zh/vue-use/intro.html" class="nav-link">
+  Vue Use
+</a></div><div class="nav-item"><a href="/docs/zh/vue-form-builder/intro.html" class="nav-link">
+  Vue Form Builder
+</a></div><div class="nav-item"><a href="/docs/zh/vue-admin-next/intro.html" class="nav-link">
+  Vue Admin Next
+</a></div><div class="nav-item"><a href="https://github.com/openfext" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  FEXT
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/docs/zh/vue-use/api/table.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/openfext/docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/zh/vue-use/intro.html" class="nav-link">
+  Vue Use
+</a></div><div class="nav-item"><a href="/docs/zh/vue-form-builder/intro.html" class="nav-link">
+  Vue Form Builder
+</a></div><div class="nav-item"><a href="/docs/zh/vue-admin-next/intro.html" class="nav-link">
+  Vue Admin Next
+</a></div><div class="nav-item"><a href="https://github.com/openfext" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  FEXT
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/docs/zh/vue-use/api/table.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/openfext/docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>介绍</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/zh/vue-use/intro.html" class="sidebar-link">Vue Use</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>API Reference</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/zh/vue-use/api/form.html" class="sidebar-link">useForm</a></li><li><a href="/docs/zh/vue-use/api/table.html" aria-current="page" class="active sidebar-link">useTable</a></li><li><a href="/docs/zh/vue-use/api/loading.html" class="sidebar-link">useLoading</a></li><li><a href="/docs/zh/vue-use/api/resize.html" class="sidebar-link">useResize</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="usetable"><a href="#usetable" class="header-anchor">#</a> useTable</h1> <h2 id="usetable-options"><a href="#usetable-options" class="header-anchor">#</a> <code>useTable([options])</code></h2> <ul><li><p><strong>参数</strong>：</p> <ul><li><code>{object} options</code> <ul><li><code>{string} uniqueKey</code> 选择数据时每行的唯一标志，默认为 <code>id</code></li> <li><code>{object} sortKeys</code> 排序字段配置
+<ul><li><code>{string} order</code> 排序方式键名，默认 <code>order</code></li> <li><code>{string} orderBy</code> 排序字段键名，默认 <code>orderBy</code></li> <li><code>{string} asc</code> 升序常量值，默认 <code>asc</code></li> <li><code>{string} desc</code> 降序常量值，默认 <code>desc</code></li></ul></li></ul></li></ul></li> <li><p><strong>返回</strong>：</p> <ul><li><code>{object}</code> <ul><li><code>{object} state</code> 响应式状态
+<ul><li><code>{object} page</code> 当前翻页参数
+<ul><li><code>{number} pageNo</code> 当前页码</li> <li><code>{number} pageSize</code> 当前每页行数</li> <li><code>{string} orderBy</code> 当前排序字段</li> <li><code>{string} order</code> 当前排序方式</li></ul></li> <li><code>{object} filter</code> 当前过滤条件</li> <li><code>{object} list</code> 当前表格数据（包含列表、总条数等信息）</li> <li><code>{object[]} selection</code> 当前选择项，通过 <code>options.uniqueKey</code> 滤重</li> <li><code>{object[]} crossPageSelection</code> 跨页选择项，通过 <code>options.uniqueKey</code> 滤重</li></ul></li> <li><code>{object} customPageSorter</code> 根据 <code>options.sortKeys</code> 转换得到的排序参数方式和字段</li> <li><code>{function} setList</code> 更新表格的数据方法</li> <li><code>{function} setPage</code> 更新翻页参数方法</li> <li><code>{function} resetPage</code> 重置翻页参数方法</li> <li><code>{function} setInitialPage</code> 设置 <code>state.initialPage</code></li> <li><code>{function} setFilter</code> 更新过滤条件方法</li> <li><code>{function} resetFilter</code> 重置过滤条件方法</li> <li><code>{function} setInitialFilter</code> 设置 <code>state.initialFilter</code></li> <li><code>{function} setPageSort</code> 设置 <code>state.page.order</code> 及 <code>state.page.orderBy</code></li> <li><code>{function} setPageSize</code> 设置每页行数</li> <li><code>{function} setPageNo</code> 设置当前页码</li> <li><code>{function} setSelection</code> 设置当前页选择项</li> <li><code>{function} addCrossPageSelection</code> 添加跨页选择的数据</li> <li><code>{function} removeCrossPageSelection</code> 移除跨页选择的数据</li> <li><code>{function} clearCrossPageSelection</code> 清空跨页选择的数据</li> <li><code>{function} triggerUpdate</code> 手动触发通过 <code>watchUpdate</code> 注册的回调</li> <li><code>{function} watchUpdate</code> 注册在设置翻页参数、过滤条件时触发的回调方法</li></ul></li></ul></li> <li><p><strong>用法</strong>：</p></li></ul> <p>管理列表页中翻页参数、过滤条件、表格数据、选择项等状态。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> table <span class="token operator">=</span> <span class="token function">useTable</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  uniqueKey<span class="token operator">:</span> <span class="token string">'uuid'</span><span class="token punctuation">,</span>
+  sortKeys<span class="token operator">:</span> <span class="token punctuation">{</span>
+    order<span class="token operator">:</span> <span class="token string">'order'</span><span class="token punctuation">,</span>
+    orderBy<span class="token operator">:</span> <span class="token string">'prop'</span><span class="token punctuation">,</span>
+    asc<span class="token operator">:</span> <span class="token string">'ascending'</span><span class="token punctuation">,</span>
+    desc<span class="token operator">:</span> <span class="token string">'descending'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">fetchList</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">page<span class="token punctuation">,</span> filter</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// remote api</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">doSomething</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">list</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// do something with selected list</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 设置初始翻页、排序参数</span>
+table<span class="token punctuation">.</span><span class="token function">setInitialPage</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  pageNo<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  pageSize<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+  orderBy<span class="token operator">:</span> <span class="token string">'id'</span><span class="token punctuation">,</span>
+  order<span class="token operator">:</span> <span class="token string">'asc'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 设置初始查询条件</span>
+table<span class="token punctuation">.</span><span class="token function">setInitialFilter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  GT_time<span class="token operator">:</span> <span class="token string">'2020-02-02 20:20:20'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 设置初始查询条件</span>
+table<span class="token punctuation">.</span><span class="token function">setInitialFilter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  GT_time<span class="token operator">:</span> <span class="token string">'2020-02-02 20:20:20'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 监听翻页参数、查询条件的变化，重新请求列表数据</span>
+table<span class="token punctuation">.</span><span class="token function">watchUpdate</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> page<span class="token punctuation">,</span> filter <span class="token punctuation">}</span> <span class="token operator">=</span> table<span class="token punctuation">.</span>state
+
+  <span class="token function">fetchList</span><span class="token punctuation">(</span>page<span class="token punctuation">,</span> filter<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">list</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    table<span class="token punctuation">.</span><span class="token function">setList</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 设置页码</span>
+table<span class="token punctuation">.</span><span class="token function">setPageNo</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 设置每页条数</span>
+table<span class="token punctuation">.</span><span class="token function">setPageSize</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 设置查询条件</span>
+table<span class="token punctuation">.</span><span class="token function">setFilter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  GT_time<span class="token operator">:</span> <span class="token string">'2020-01-01 00:00:00'</span><span class="token punctuation">,</span>
+  LT_time<span class="token operator">:</span> <span class="token string">'2020-04-01 00:00:00'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 更新查询条件之后，需要手动触发 watchUpdate 注册的回调</span>
+table<span class="token punctuation">.</span><span class="token function">triggerUpdate</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 设置当前页已选择的数据</span>
+table<span class="token punctuation">.</span><span class="token function">setSelection</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">{</span> id<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">'A'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 使用已选择的数据</span>
+<span class="token function">doSomething</span><span class="token punctuation">(</span>table<span class="token punctuation">.</span>state<span class="token punctuation">.</span>selection<span class="token punctuation">)</span>
+
+<span class="token comment">// 清空当前页已选择的数据</span>
+table<span class="token punctuation">.</span><span class="token function">setSelection</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 多次添加已选择的数据，可以用于跨页选择等场景</span>
+table<span class="token punctuation">.</span><span class="token function">addCrossPageSelection</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span> id<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">'A'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> id<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">'B'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+table<span class="token punctuation">.</span><span class="token function">addCrossPageSelection</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">{</span> id<span class="token operator">:</span> <span class="token number">25</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">'Y'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 使用跨页选择的数据</span>
+<span class="token function">doSomething</span><span class="token punctuation">(</span>table<span class="token punctuation">.</span>state<span class="token punctuation">.</span>crossPageSelection<span class="token punctuation">)</span>
+</code></pre></div><ul><li><strong>参考</strong> <ul><li><a href="/docs/zh/vue-admin-next/guide/table.html#usetable">Vue Admin Next - useTable</a></li></ul></li></ul></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/openfext/docs/edit/master/docs/zh/vue-use/api/table.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">6/7/2020, 10:30:21 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/zh/vue-use/api/form.html" class="prev">
+        useForm
+      </a></span> <span class="next"><a href="/docs/zh/vue-use/api/loading.html">
+        useLoading
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/docs/assets/js/app.04ef65b2.js" defer></script><script src="/docs/assets/js/2.f8028efd.js" defer></script><script src="/docs/assets/js/38.0bc519b8.js" defer></script>
+  </body>
+</html>
