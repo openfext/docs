@@ -8,6 +8,11 @@
 npm i @fext/vue-form-builder @fext/vue-use vee-validate
 ```
 
+### 核心类库依赖
+
+- [vue](https://github.com/vuejs/vue) >= `2.6.0`
+- [@vue/composition-api](https://github.com/vuejs/composition-api) >= `0.5.0`
+
 ## 默认组件
 
 若需要进行动态配置的表单组件已经全局注册，则可以直接使用内置的 `FormBuilder` 组件。
