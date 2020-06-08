@@ -1,6 +1,6 @@
 # useResize
 
-## useResize([options])
+## `useResize([options])`
 
 - **参数**：
 

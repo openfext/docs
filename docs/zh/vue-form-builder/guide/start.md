@@ -131,7 +131,7 @@ Vue.use(ElFormAdaptorPlugin);
 组件 `ViewFormAdaptor` 引入方式：
 
 ```js
-import ViewFormAdaptor from '@fext/vue-form-builder/lib/adaptor/element';
+import ViewFormAdaptor from '@fext/vue-form-builder/lib/adaptor/view';
 ```
 
 或全局注册：
@@ -145,7 +145,7 @@ Vue.use(ViewFormAdaptorPlugin);
 ### Ant Design Vue
 
 ```js
-import AntFormAdaptor from '@fext/vue-form-builder/lib/adaptor/element';
+import AntFormAdaptor from '@fext/vue-form-builder/lib/adaptor/antd';
 ```
 
 或全局注册：
