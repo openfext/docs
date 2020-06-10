@@ -4,7 +4,7 @@ function getVueAdminNextSidebar(groups = []) {
       title: groups[0],
       sidebarDepth: 0,
       collapsable: false,
-      children: ['intro', 'faq'],
+      children: ['intro', 'faq', 'contact'],
     },
     {
       title: groups[1],
@@ -41,7 +41,7 @@ function getVueFormBuilderSidebar(groups = []) {
       title: groups[0],
       sidebarDepth: 0,
       collapsable: false,
-      children: ['intro'],
+      children: ['intro', 'contact'],
     },
     {
       title: groups[1],
@@ -76,7 +76,7 @@ function getVueUseSidebar(groups = []) {
       title: groups[0],
       sidebarDepth: 0,
       collapsable: false,
-      children: ['intro'],
+      children: ['intro', 'contact'],
     },
     {
       title: groups[1],
