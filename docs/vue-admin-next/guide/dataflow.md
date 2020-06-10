@@ -1,8 +1,8 @@
-# 数据处理流程
+# 数据处理
 
 ## Dataflow
 
-在开始其他功能之前，首先**重点了解**一下 Vue Admin Next 中的数据处理流程。在中后台系统中，与服务器端的数据交互是项目中的重中之重。为了避免将大量业务逻辑耦合在视图层中，Vue Admin Next 设计了一套基于 **DAO**（Data Access Object，数据访问对象）、**Model**（模型）、**Service**（服务）的数据处理流程，同时还可以通过 **Log**（日志）模块打印关键信息至控制台或上报至日志服务器。Vue Admin Next 将这个流程命名为 **Dataflow**。
+接下来我们**重点了解**一下 Vue Admin Next 中的数据处理流程。在中后台系统中，与服务器端的数据交互是项目中的重中之重。为了避免将大量业务逻辑耦合在视图层中，Vue Admin Next 设计了一套基于 **DAO**（Data Access Object，数据访问对象）、**Model**（模型）、**Service**（服务）的数据处理流程，同时还可以通过 **Log**（日志）模块打印关键信息至控制台或上报至日志服务器。Vue Admin Next 将这个流程命名为 **Dataflow**。
 
 ## Log
 

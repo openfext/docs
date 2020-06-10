@@ -42,7 +42,7 @@ Vue Admin Next 的默认布局通过 `src/common/config/nav.js` 配置导航菜�
 - 路由链接，通过 `authService.hasURIAuth(path) || authService.hasAliasAuth(alias)` 进行判断
 
 ::: tip
-实现参考源码 `src/common/services/AuthService.js`，实际项目中根据业务场景可以进行修改。
+参加 [用户权限](./user.md)。
 :::
 
 参考示例：
