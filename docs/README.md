@@ -2,11 +2,11 @@
 sidebar: false
 ---
 
-# About
+# 关于
 
-Frontend Next - Next-generation front-end development technologies in action.
+Frontend Next - 下一代前端开发技术实战。
 
-## Projects
+## 项目
 
 - [**Vue Use**](./vue-use/intro.md)
 - [**Vue Form Builder**](./vue-form-builder/intro.md)

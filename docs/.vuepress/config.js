@@ -92,15 +92,15 @@ module.exports = {
   head: [['link', { rel: 'icon', href: '/images/logo.png' }]],
   locales: {
     '/': {
+      lang: 'zh-CN',
+      title: 'FEXT Docs',
+      description: '下一代前端开发技术实战',
+    },
+    '/en/': {
       lang: 'en-US',
       title: 'FEXT Docs',
       description:
         'Next-generation front-end development technologies in action',
-    },
-    '/zh/': {
-      lang: 'zh-CN',
-      title: 'FEXT Docs',
-      description: '下一代前端开发技术实战',
     },
   },
 
@@ -117,13 +117,13 @@ module.exports = {
 
     locales: {
       '/': {
-        editLinkText: 'Edit this page on GitHub',
-        selectText: 'Languages',
-        label: 'English',
+        editLinkText: '在 GitHub 上编辑此页',
+        selectText: '选择语言',
+        label: '简体中文',
         serviceWorker: {
           updatePopup: {
-            message: 'New content is available.',
-            buttonText: 'Refresh',
+            message: '站点内容有更新',
+            buttonText: '刷新',
           },
         },
         nav: [
@@ -141,55 +141,55 @@ module.exports = {
           },
           { text: 'FEXT', link: 'https://github.com/openfext' },
         ],
-        // sidebarDepth: 1,
-        // sidebar: {
-        //   '/vue-admin-next/': getVueAdminNextSidebar([
-        //     'Introduction',
-        //     'Guide',
-        //     'API Reference',
-        //   ]),
-        // },
-      },
-      '/zh/': {
-        editLinkText: '在 GitHub 上编辑此页',
-        selectText: '选择语言',
-        label: '简体中文',
-        serviceWorker: {
-          updatePopup: {
-            message: '站点内容有更新',
-            buttonText: '刷新',
-          },
-        },
-        nav: [
-          {
-            text: 'Vue Use',
-            link: '/zh/vue-use/intro.html',
-          },
-          {
-            text: 'Vue Form Builder',
-            link: '/zh/vue-form-builder/intro.html',
-          },
-          {
-            text: 'Vue Admin Next',
-            link: '/zh/vue-admin-next/intro.html',
-          },
-          { text: 'FEXT', link: 'https://github.com/openfext' },
-        ],
         sidebarDepth: 2,
         sidebar: {
-          '/zh/vue-admin-next/': getVueAdminNextSidebar([
+          '/vue-admin-next/': getVueAdminNextSidebar([
             '介绍',
             '指南',
             'API Reference',
           ]),
-          '/zh/vue-form-builder/': getVueFormBuilderSidebar([
+          '/vue-form-builder/': getVueFormBuilderSidebar([
             '介绍',
             '指南',
             'API Reference',
             'Config Reference',
           ]),
-          '/zh/vue-use/': getVueUseSidebar(['介绍', 'API Reference']),
+          '/vue-use/': getVueUseSidebar(['介绍', 'API Reference']),
         },
+      },
+      '/en/': {
+        editLinkText: 'Edit this page on GitHub',
+        selectText: 'Languages',
+        label: 'English',
+        serviceWorker: {
+          updatePopup: {
+            message: 'New content is available.',
+            buttonText: 'Refresh',
+          },
+        },
+        nav: [
+          {
+            text: 'Vue Use',
+            link: '/en/vue-use/intro.html',
+          },
+          {
+            text: 'Vue Form Builder',
+            link: '/en/vue-form-builder/intro.html',
+          },
+          {
+            text: 'Vue Admin Next',
+            link: '/en/vue-admin-next/intro.html',
+          },
+          { text: 'FEXT', link: 'https://github.com/openfext' },
+        ],
+        // sidebarDepth: 1,
+        // sidebar: {
+        //   '/en/vue-admin-next/': getVueAdminNextSidebar([
+        //     'Introduction',
+        //     'Guide',
+        //     'API Reference',
+        //   ]),
+        // },
       },
     },
   },
